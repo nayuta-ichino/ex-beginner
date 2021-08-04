@@ -7,7 +7,7 @@
 <body>
 
 	<p>数字を入力してください。</p>
-	<form th:action="@{/exam02/result}">
+	<form th:action="@{/exam02/result}" method="POST">
 		<input type="text" name="num1"> + <input type="text" name="num2"> <br>
 		<button>計算</button>
 	</form>
