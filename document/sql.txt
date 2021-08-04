@@ -1,0 +1,10 @@
+DROP TABLE members;
+CREATE TABLE members(
+  id serial primary key,
+  name text not null,
+  age integer,
+  dep_id integer
+);
+insert into members (name,age,dep_id) values('イチロー',21,1);
+insert into members (name,age,dep_id) values('ジロー',32,2);
+insert into members (name,age,dep_id) values('サブロー',43,1);

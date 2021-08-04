@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>検索結果</h1>
+	<span th:each="member:${memberList}">
+		id : <span th:text="${member.id}"></span> 
+		名前 : <span th:text="${member.name}"></span> 
+		年齢 : <span th:text="${member.age}"></span>
+		dep_id : <span th:text="${member.depId}"></span> <br>
+	</span>
+	
+	<a th:href="@{/exam05}">検索画面に戻る</a>
+</body>
+</html>
